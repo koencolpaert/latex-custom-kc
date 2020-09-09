@@ -1,0 +1,28 @@
+---
+output: 
+  pdf_document:
+    keep_tex: true
+    fig_caption: yes
+    latex_engine: pdflatex
+    template: ../kc-latex-sow.tex
+geometry: margin=1in
+
+title: "POSC 0000: A Class with an R Markdown Syllabus"
+author: Koen Colpaert
+date: "Fall 2016"
+
+email: "koen.colpaert@vlaanderen.be"
+web: "svmiller.com/teaching"
+officehours: "W 09:00-11:30 a.m."
+office: "230A Brackett Hall"
+classroom: "*online*"
+classhours: "TR 02:00-03:45 p.m."
+
+fontfamily: mathpazo
+fontsize: 11pt
+header-includes:
+   - \linespread{1.05}
+---
+
+
+

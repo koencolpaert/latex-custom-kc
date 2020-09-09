@@ -1,0 +1,266 @@
+%%% A template to produce a nice-looking Curriculum Vitae.
+%%% based on the vita of Kieran Healy <kjhealy@gmail.com>
+%%% Most recent version is at http://kjhealy.github.com/kjh-vita
+%%%
+%%% ------------------------------------------------------------------------
+%%% Requirements that are included in a modern tex distribution:
+%%% ------------------------------------------------------------------------
+%%% xelatex
+%%% fontspec.sty
+%%% hyperrref.sty
+%%% xunicode.sty
+%%% color.sty
+%%% url.sty
+%%% fancyhdr.sty
+%%% memoir.cls
+%%% fontawesome.sty
+%%%
+%%% 
+%%% 
+%%% ------------------------------------------------------------------------
+%%% Requirements from https://github.com/kjhealy/latex-custom-kjh
+%%% ------------------------------------------------------------------------
+%%% org-preamble-xelatex.sty
+%%% memoir-article-styles.sty
+%%%
+%%% ------------------------------------------------------------------------
+%%% Optional
+%%% ------------------------------------------------------------------------
+%%% git
+%%% vc.sty
+%%% revnum.sty
+%%% Fonts
+%%%
+%%% ------------------------------------------------------------------------
+%%% Note
+%%%------------------------------------------------------------------------
+%%% Because this is a hand-tweaked file, be on the look out for \medksip, 
+%%% \bigskip and \newpage commands here and there, which are used to balance
+%%% the layout or avoid widows & orphans, etc. You should of course add or 
+%%% remove these as needed.
+%%%------------------------------------------------------------------------
+
+\documentclass[11pt,article,oneside]{memoir}   
+\usepackage{org-preamble-xelatex} 
+\usepackage{fontawesome,url}
+
+
+%%%------------------------------------------------------------------------
+%%% Metadata
+%%%------------------------------------------------------------------------
+
+%% Change as needed. Or just add me as a coauthor. Only some of these are 
+%% used below in the hyperref declaration and address banner section.
+\def\myauthor{Koen Colpaert}
+\def\mytitle{Vita}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myaffiliation{}
+\def\myaddress{}
+\def\myemail{koen@colpaert.org}
+\def\myweb{www.colpaert.org}
+\def\myphone{+32 (0) 487024495}
+\def\myfax{(919) 660-5623}
+\def\mytwitter{LinkedIn}
+\def\myversion{}
+\def\myrevision{}
+
+
+\def\myaffiliation{Department FB}
+\def\myauthor{Koen Colpaert}
+\date{} % not used (revision control instead)
+\def\mykeywords{Koen, Colpaert, Koen Colpaert, Vita, CV, Resume}
+
+%%%------------------------------------------------------------------------  
+%%% Git version tracking 
+%%%------------------------------------------------------------------------
+
+%% If you don't use git or the vc package (from CTAN), comment this out.
+%% If you comment it out, be sure to remove the \rfoot comment below, too.
+% \input{vc}
+
+%% uncomment if you want to use biblatex
+% \usepackage{enable-biblatex}
+
+%%%------------------------------------------------------------------------
+%%% Document
+%%%------------------------------------------------------------------------
+\begin{document}
+
+%% Choose fonts for use with xelatex
+%% Minion and Myriad are widely available, from Adobe. 
+%% Pragmata is available to buy at http://www.fsd.it/fonts/pragma.htm
+%% and is worth every penny. Any good monospace font will work fine, though.
+%% Consolas or inconsolata are good alternatives.
+
+%% Use Caladea instead, which is already available on the server
+\setromanfont[Mapping={tex-text}, 
+	Numbers={OldStyle},
+	Ligatures={Common}]%{Minion Pro}
+    {Caladea}
+    
+%% Use Cabin instead, which is already available on the server
+\setsansfont[Mapping=tex-text,
+	Ligatures={Common}, 
+	Colour=AA0000]%{Unit-Medium}
+    {Cabin}
+
+%% Use Fira Mono instead, which is already available on the server
+\setmonofont[Mapping=tex-text,Scale=0.85]%{PragmataPro} 
+{Fira Mono}
+
+% \newfontface\scheader[SmallCapsFont={Minion Pro},SmallCapsFeatures={Letters=SmallCaps}]{Minion Pro}
+%% Caladea doesn't have small caps, so don't use this.
+\let\scheader\relax
+
+% \newfontface\addressblock[Mapping={tex-text}, 
+% 	Numbers={OldStyle},
+% 	Ligatures={Common}]{Minion Pro Medium Caption}
+\newfontface\addressblock[Mapping={tex-text}, 
+	Numbers={OldStyle},
+	Ligatures={Common}]{Caladea}
+
+
+%%%------------------------------------------------------------------------
+%%% Local commands
+%%%------------------------------------------------------------------------
+
+%% Marginal header
+%% Note: as the document goes on you may need to introduce a (gradually increasing)
+%% \vspace element to keep the marginal header pleasingly aligned with the first 
+%% item in the body text. Like this: \marginhead{{\vskip 0.4em}Grants}, or 
+%% \marginhead{{\vskip 0.8em}Service}. Experiment as needed.
+\newcommand{\marginhead}[1]{\marginpar{\textsf{{\footnotesize\vspace{-1em}\flushright #1}}}}
+
+
+%% [optional] custom ampersand (font consistent with the one chosen above)
+% \newcommand{\amper}{{\fontspec[Scale=.95,Colour=AA0000]{Minion Pro Medium}\selectfont\&\,}}
+
+%% No bullets on labels
+\renewcommand{\labelitemi}{~} 
+
+%% Custom hanging indent for vita items
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+%\def\ind{\hangindent=18pt\hangafter=1 \noindent}
+\def\labelitemi{~}
+\renewcommand{\labelitemii}{~}
+
+%%%------------------------------------------------------------------------
+%%% Page layout
+%%%------------------------------------------------------------------------
+
+% These lines will insert git revision info in the footer, using the vc
+% package---see docs for vc package for details. Comment out this line
+% if you're not using vc, and also remove the \input{vc} line above.
+\pagestyle{kjh}
+\thispagestyle{kjhgit}
+
+
+%%%------------------------------------------------------------------------
+%%% Address and contact block
+%%%------------------------------------------------------------------------
+\begin{minipage}[t]{2.95in}
+ \flushright {\footnotesize 
+ \href{http://www.colpaert.org}{Koen Colpaert} \\ Zusters Maricolenstraat 17 \\ 9820 Merelbeke, \textsc{BE}}  
+  
+\end{minipage}
+\hfill     
+%\begin{minipage}[t]{0.0in}
+% dummy (needed here)
+%\end{minipage}
+\hfill
+\begin{minipage}[t]{1.3in}
+  \flushright \footnotesize  \addressblock \myphone \, \faPhone \\ 
+  {\scriptsize  \texttt{\href{https://www.linkedin.com/in/koencolpaert/}{\mytwitter}} \, \faGlobe }  \\ 
+  {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}} \, \faEnvelope} \\
+  {\scriptsize  \texttt{\href{\myweb}{\myweb}} \, \faGlobe}
+\end{minipage}
+
+\medskip
+
+%% Name 
+% \noindent{\LARGE\scheader \textsc{kieran healy}}
+\noindent{\Large\bfseries KOEN COLPAERT}
+\reversemarginpar
+
+\bigskip       
+
+%% Work experience
+% \medskip
+\marginhead{\sffamily experience}
+
+\ind Information Security Officer, Department of Finance and Budgetting, Flemish Government, 2020--Present - Head of Security Office and networking team.      
+
+\ind Head of Business Data and Information team, Department of Finance and Budgetting, Flemish Government, 2009--2019 - Dashboards, analysis, reporting and data science. Content Management Systems WordPress and Drupal.
+
+\ind Senior IT consultant for IBM Cognos BI, element61, 2008--2009 - Dashboards and reporting, migration from SAP BO to IBM Cognos, projects for customers in public and private sector .
+
+\ind Information Architect, miscellaneous departments of the Flemish Government, 1997--2008 - Selection and implementation of BI tool, Development of dashboards, reports and analysis, Head of the internal BI team.
+
+\ind Miscellaneous positions in IT and business administration, 1995--1997.
+
+\bigskip
+
+%% Education
+
+\marginhead{\sffamily {{\vskip -0.23em} education}}
+
+
+%\medskip
+
+\ind M.A., International and European Law, Vrije Universiteit Brussel (VUB), 1995.
+
+\ind \hspace{0.35in} \footnotesize Thesis: \emph{De West-Europese Unie na Maastricht.} \normalsize \vspace{0.01in}
+
+\ind M.A., Political and Social Sciences, Universiteit Gent (RUG), 1994.
+
+\ind \hspace{0.35in} \footnotesize Thesis: \emph{De informatiemaatschappij: een literatuurstudie.} \normalsize \vspace{0.01in}
+
+\ind Latin-Modern languages, Atheneum Wispelberg (Ghent), 1989.
+
+\bigskip
+ 
+%% Certifications
+\marginhead{\sffamily {\vskip 0.35em} certifications}
+\medskip
+
+\ind  Data Protection Officer. 2019. Data Protection Institute. \vspace{0.05in}
+
+\ind Data Vault Certified Data Modeler. 2011. Genesee Acadamy LLC.
+\vspace{0.05in}
+
+\ind Prince2 Foundation Certification. 2008. APM Group.
+\vspace{0.05in}
+
+%% Skills
+\marginhead{\sffamily {\vskip 0.35em} skills}
+\medskip
+
+\ind  Project management
+\vspace{0.05in}
+
+\ind BI and DWH: Cognos BI, Microsoft BI, SQL Server
+\vspace{0.05in}
+
+\ind Data science: R, git
+\vspace{0.05in}
+
+\ind Information security and vulnaribility management: Splunk
+\vspace{0.05in}
+
+%% Personalia
+\marginhead{\sffamily {\vskip 0.35em} personalia}
+\medskip
+
+\ind  DoB: 17/08/1970
+\vspace{0.05in}
+
+\ind  PoB: Ghent, Belgium
+\vspace{0.05in}
+
+\medskip
+
+\end{document}

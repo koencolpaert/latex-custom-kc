@@ -1,0 +1,52 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    keep_tex: true
+    fig_caption: true
+    latex_engine: pdflatex
+    template: ../kc-latex-ms.tex
+bibliography: master.bib
+header-includes:
+  -  \usepackage{hyperref}
+biblio-style: apsr
+title: "A meaningful Title"
+thanks: "Locatie document (http://). **Huidige versie**: `r format(Sys.time(), '%d %B %Y')`; **Auteur**: koen.colpaert@vlaanderen.be."
+author:
+- name: Koen Colpaert
+  affiliation: Security Officer
+abstract: "Consider this an abstract."
+keywords: "a, b, c"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+geometry: margin=1in
+fontfamily: mathpazo
+fontsize: 11pt
+# spacing: double
+endnote: no
+---
+
+
+
+
+# Header 1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis mauris sit amet massa vitae. Bibendum enim facilisis gravida neque convallis a cras. Nisi porta lorem mollis aliquam ut porttitor leo a. Pharetra et ultrices neque ornare aenean euismod. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Eu augue ut lectus arcu bibendum at varius. Ac turpis egestas integer eget aliquet. Neque volutpat ac tincidunt vitae semper quis. Id cursus metus aliquam eleifend. A pellentesque sit amet porttitor eget dolor morbi. A scelerisque purus semper eget duis. Mi eget mauris pharetra et ultrices. Eu mi bibendum neque egestas. Mauris commodo quis imperdiet massa tincidunt nunc.
+
+Id aliquet risus feugiat in ante metus. Nibh tellus molestie nunc non blandit massa enim. Quam id leo in vitae turpis massa sed elementum. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Nullam vehicula ipsum a arcu cursus. Orci ac auctor augue mauris. Vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Elementum facilisis leo vel fringilla est. Quis varius quam quisque id diam vel quam elementum. Risus feugiat in ante metus dictum. Orci porta non pulvinar neque. Scelerisque in dictum non consectetur a erat nam at lectus. Enim sit amet venenatis urna cursus eget nunc scelerisque.
+
+Libero enim sed faucibus turpis. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum. Neque volutpat ac tincidunt vitae semper quis. Quis commodo odio aenean sed adipiscing diam donec adipiscing tristique. Sagittis vitae et leo duis. Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Ultricies lacus sed turpis tincidunt id. Tempus quam pellentesque nec nam aliquam sem et tortor consequat. Enim sed faucibus turpis in eu mi. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Ipsum dolor sit amet consectetur adipiscing. Volutpat blandit aliquam etiam erat velit scelerisque. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Cras sed felis eget velit aliquet sagittis. Egestas maecenas pharetra convallis posuere morbi.
+
+Sed viverra tellus in hac habitasse platea dictumst. Eu consequat ac felis donec et odio pellentesque. Mi ipsum faucibus vitae aliquet nec. Massa sapien faucibus et molestie ac feugiat sed lectus. Imperdiet proin fermentum leo vel orci porta non pulvinar. Et odio pellentesque diam volutpat commodo sed egestas egestas fringilla. Lobortis feugiat vivamus at augue eget arcu dictum. Purus in mollis nunc sed id semper risus in hendrerit. Sed augue lacus viverra vitae congue eu consequat. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Id nibh tortor id aliquet lectus proin. Risus nullam eget felis eget nunc lobortis mattis aliquam. Nisi vitae suscipit tellus mauris a diam maecenas sed enim.
+
+Fringilla urna porttitor rhoncus dolor purus non enim praesent elementum. Ac tincidunt vitae semper quis lectus nulla at. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. Proin sed libero enim sed faucibus turpis in eu mi. Vel facilisis volutpat est velit egestas dui id ornare arcu. Sed vulputate mi sit amet mauris commodo quis. Massa tempor nec feugiat nisl. Dui ut ornare lectus sit amet est placerat in egestas. In mollis nunc sed id semper risus in. Venenatis tellus in metus vulputate eu scelerisque felis. Leo in vitae turpis massa sed elementum. Sagittis id consectetur purus ut faucibus. Sem fringilla ut morbi tincidunt augue interdum velit euismod.
+
+
+
+<!--
+# References
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\vspace*{-0.2in}
+\noindent
+-->

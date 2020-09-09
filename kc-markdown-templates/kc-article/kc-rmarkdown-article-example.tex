@@ -1,0 +1,256 @@
+\documentclass[11pt,]{article}
+\usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry}
+\newcommand*{\authorfont}{\fontfamily{phv}\selectfont}
+\usepackage[]{mathpazo}
+
+
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+
+
+
+
+\usepackage{abstract}
+\renewcommand{\abstractname}{}    % clear the title
+\renewcommand{\absnamepos}{empty} % originally center
+
+\renewenvironment{abstract}
+ {{%
+    \setlength{\leftmargin}{0mm}
+    \setlength{\rightmargin}{\leftmargin}%
+  }%
+  \relax}
+ {\endlist}
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+%  \null
+%  \vskip 2em%
+%  \begin{center}%
+  \let \footnote \thanks
+    {\fontsize{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
+}
+%\fi
+\makeatother
+
+
+
+
+\setcounter{secnumdepth}{0}
+
+
+
+
+\title{A meaningful Title \thanks{Locatie document (\url{http://}).
+\textbf{Huidige versie}: 09 September 2020; \textbf{Auteur}:
+\href{mailto:koen.colpaert@vlaanderen.be}{\nolinkurl{koen.colpaert@vlaanderen.be}}.}  }
+ 
+
+
+
+\author{\Large Koen
+Colpaert\vspace{0.05in} \newline\normalsize\emph{Security Officer}  }
+
+
+\date{}
+
+\usepackage{titlesec}
+
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\itshape}
+\titleformat*{\subsubsection}{\normalsize\itshape}
+\titleformat*{\paragraph}{\normalsize\itshape}
+\titleformat*{\subparagraph}{\normalsize\itshape}
+
+
+\usepackage{natbib}
+\bibliographystyle{apsr}
+\usepackage[strings]{underscore} % protect underscores in most circumstances
+
+
+
+\newtheorem{hypothesis}{Hypothesis}
+\usepackage{setspace}
+
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{hyperref}
+
+% move the hyperref stuff down here, after header-includes, to allow for - \usepackage{hyperref}
+
+\makeatletter
+\@ifpackageloaded{hyperref}{}{%
+\ifxetex
+  \PassOptionsToPackage{hyphens}{url}\usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \PassOptionsToPackage{hyphens}{url}\usepackage[draft,unicode=true]{hyperref}
+\fi
+}
+
+\@ifpackageloaded{color}{
+    \PassOptionsToPackage{usenames,dvipsnames}{color}
+}{%
+    \usepackage[usenames,dvipsnames]{color}
+}
+\makeatother
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={Koen Colpaert (Security Officer)},
+             pdfkeywords = {a, b, c},  
+            pdftitle={A meaningful Title},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+% Add an option for endnotes. -----
+
+
+% add tightlist ----------
+\providecommand{\tightlist}{%
+\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% add some other packages ----------
+
+% \usepackage{multicol}
+% This should regulate where figures float
+% See: https://tex.stackexchange.com/questions/2275/keeping-tables-figures-close-to-where-they-are-mentioned
+\usepackage[section]{placeins}
+
+
+\begin{document}
+	
+% \pagenumbering{arabic}% resets `page` counter to 1 
+%    
+
+% \maketitle
+
+{% \usefont{T1}{pnc}{m}{n}
+\setlength{\parindent}{0pt}
+\thispagestyle{plain}
+{\fontsize{18}{20}\selectfont\raggedright 
+\maketitle  % title \par  
+
+}
+
+{
+   \vskip 13.5pt\relax \normalsize\fontsize{11}{12} 
+\textbf{\authorfont Koen Colpaert} \hskip 15pt \emph{\small Security
+Officer}   
+
+}
+
+}
+
+
+
+
+
+
+
+
+\begin{abstract}
+
+    \hbox{\vrule height .2pt width 39.14pc}
+
+    \vskip 8.5pt % \small 
+
+\noindent Consider this an abstract.
+
+
+\vskip 8.5pt \noindent \emph{Keywords}: a, b, c \par
+
+    \hbox{\vrule height .2pt width 39.14pc}
+
+
+
+\end{abstract}
+
+
+\vskip -8.5pt
+
+
+ % removetitleabstract
+
+\noindent  
+
+\hypertarget{header-1}{%
+\section{Header 1}\label{header-1}}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Facilisis mauris sit
+amet massa vitae. Bibendum enim facilisis gravida neque convallis a
+cras. Nisi porta lorem mollis aliquam ut porttitor leo a. Pharetra et
+ultrices neque ornare aenean euismod. Interdum consectetur libero id
+faucibus nisl tincidunt eget nullam. Eu augue ut lectus arcu bibendum at
+varius. Ac turpis egestas integer eget aliquet. Neque volutpat ac
+tincidunt vitae semper quis. Id cursus metus aliquam eleifend. A
+pellentesque sit amet porttitor eget dolor morbi. A scelerisque purus
+semper eget duis. Mi eget mauris pharetra et ultrices. Eu mi bibendum
+neque egestas. Mauris commodo quis imperdiet massa tincidunt nunc.
+
+Id aliquet risus feugiat in ante metus. Nibh tellus molestie nunc non
+blandit massa enim. Quam id leo in vitae turpis massa sed elementum.
+Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Nullam
+vehicula ipsum a arcu cursus. Orci ac auctor augue mauris. Vel quam
+elementum pulvinar etiam non quam lacus suspendisse faucibus. Elementum
+facilisis leo vel fringilla est. Quis varius quam quisque id diam vel
+quam elementum. Risus feugiat in ante metus dictum. Orci porta non
+pulvinar neque. Scelerisque in dictum non consectetur a erat nam at
+lectus. Enim sit amet venenatis urna cursus eget nunc scelerisque.
+
+Libero enim sed faucibus turpis. Tellus in metus vulputate eu
+scelerisque felis imperdiet proin fermentum. Neque volutpat ac tincidunt
+vitae semper quis. Quis commodo odio aenean sed adipiscing diam donec
+adipiscing tristique. Sagittis vitae et leo duis. Sed adipiscing diam
+donec adipiscing tristique risus nec feugiat. Ultricies lacus sed turpis
+tincidunt id. Tempus quam pellentesque nec nam aliquam sem et tortor
+consequat. Enim sed faucibus turpis in eu mi. Dolor sit amet consectetur
+adipiscing elit duis tristique sollicitudin. Ipsum dolor sit amet
+consectetur adipiscing. Volutpat blandit aliquam etiam erat velit
+scelerisque. In metus vulputate eu scelerisque felis imperdiet proin
+fermentum. Cras sed felis eget velit aliquet sagittis. Egestas maecenas
+pharetra convallis posuere morbi.
+
+Sed viverra tellus in hac habitasse platea dictumst. Eu consequat ac
+felis donec et odio pellentesque. Mi ipsum faucibus vitae aliquet nec.
+Massa sapien faucibus et molestie ac feugiat sed lectus. Imperdiet proin
+fermentum leo vel orci porta non pulvinar. Et odio pellentesque diam
+volutpat commodo sed egestas egestas fringilla. Lobortis feugiat vivamus
+at augue eget arcu dictum. Purus in mollis nunc sed id semper risus in
+hendrerit. Sed augue lacus viverra vitae congue eu consequat. Cursus
+metus aliquam eleifend mi in nulla posuere sollicitudin. Euismod in
+pellentesque massa placerat duis ultricies lacus sed turpis. Id nibh
+tortor id aliquet lectus proin. Risus nullam eget felis eget nunc
+lobortis mattis aliquam. Nisi vitae suscipit tellus mauris a diam
+maecenas sed enim.
+
+Fringilla urna porttitor rhoncus dolor purus non enim praesent
+elementum. Ac tincidunt vitae semper quis lectus nulla at. Faucibus
+vitae aliquet nec ullamcorper sit amet risus nullam eget. Proin sed
+libero enim sed faucibus turpis in eu mi. Vel facilisis volutpat est
+velit egestas dui id ornare arcu. Sed vulputate mi sit amet mauris
+commodo quis. Massa tempor nec feugiat nisl. Dui ut ornare lectus sit
+amet est placerat in egestas. In mollis nunc sed id semper risus in.
+Venenatis tellus in metus vulputate eu scelerisque felis. Leo in vitae
+turpis massa sed elementum. Sagittis id consectetur purus ut faucibus.
+Sem fringilla ut morbi tincidunt augue interdum velit euismod.
+
+
+
+
+
+\newpage
+\singlespacing 
+\bibliography{master.bib}
+
+\end{document}
