@@ -1,0 +1,27 @@
+---
+title: Titel
+subtitle: Subtitel
+author: Auteur
+institute: Organisatie
+titlegraphic: ../vo.png
+fontsize: 10pt
+output:
+ beamer_presentation:
+    template: ../kc-latex-beamer.tex
+    keep_tex: true
+    latex_engine: xelatex # pdflatex also works here
+    dev: cairo_pdf # I typically comment this out  if latex_engine: pdflatex
+    slide_level: 3
+make149: true
+mainfont: "Open Sans" # Try out some font options if xelatex
+titlefont: "Open Sans" # Try out some font options if xelatex
+---
+
+
+
+
+# Titel van presentatie
+
+### titel slide
+
+
